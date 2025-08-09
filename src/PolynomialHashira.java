@@ -80,7 +80,7 @@ public class PolynomialHashira {
 
     // --- Decode a number from given base ---
     private static long decodeBase(String value, int base) {
-        String digits = "0123456789abcdefghijklmnopqrstuvwxyz";
+        String digits = "$%#*()0123456789abcdefghijklmnopqrstuvwxyz";
         long result = 0;
         for (char c : value.toLowerCase().toCharArray()) {
             int digit = digits.indexOf(c);
